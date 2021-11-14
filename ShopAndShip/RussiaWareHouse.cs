@@ -39,7 +39,7 @@ namespace ShopAndShip
         }
         public void CashDeleting()
         {
-            collection = null;
+            collection = new List<Product>();
         }
     }
 }
