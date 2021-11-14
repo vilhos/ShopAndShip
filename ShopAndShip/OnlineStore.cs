@@ -46,7 +46,7 @@ namespace ShopAndShip
         public List<Product> Shipping()
         {
             Console.WriteLine("Product is shipped to Usa Warehouse");
-            return products;
+            return cartProducts;
         }
         public float Cost(float weight)
         {
@@ -56,8 +56,7 @@ namespace ShopAndShip
 
         public void CashDeleting()
         {
-            cartProducts = null;
+            cartProducts = new List<Product>();
         }
     }
 }
-
